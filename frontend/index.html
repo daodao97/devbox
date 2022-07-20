@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+   <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body data-wails-drag>
+    <div id="preloader" class="preloader">
+      <div class="preloader-inner"></div>
+    </div>
+    <div id="app"></div>
+    <script>
+      const htmlEl = document.getElementsByTagName('html')[0]
+      const dark = window.matchMedia('(prefers-color-scheme: dark)')
+      if (dark.matches === false) {
+        htmlEl.classList = 'light'
+        window.THEME = 'light'
+      }
+      dark.addEventListener('change', function(e) {
+        htmlEl.classList =  e.matches ? 'dark' : 'light'
+        window.THEME =  e.matches ? 'dark' : 'light'
+      })
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.vscode
+*.log
+wails
+build/bin
+frontend/node_modules
+frontend/dist
+frontend/wailsjs
+frontend/components.d.ts
+frontend/auto-imports.d.ts
+frontend/package.json.md5
+frontend/stats.html

@@ -1,0 +1,10 @@
+html {
+    --app-bg: #e9eef3;
+    --app-sidebar-bg : #d3dce6;
+    --el-icon-color: rgb(0, 31, 280);
+}
+html.dark {
+    --app-bg: #1c1d1f;
+    --app-sidebar-bg : #292727;
+    --el-icon-color: #808080;
+}

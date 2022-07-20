@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>this is local html page</h1>
+    <p>source code: data/plugin/test/index.html</p>
+    <p>call go method: app.App.WorkspaceList result: ↓</p>
+    <pre id="result"></pre>
+    <script>
+        parent.runtime.LogError('a sub iframe page error log')
+
+        parent.window.go.app.App.WorkspaceList().then(res => {
+            document.getElementById('result').innerText = JSON.stringify(res, "", "  ")
+            console.log(123, res)
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@import "init.scss";
+
+body {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    overscroll-behavior: none;
+}
+
+@import 'element-plus/dist/index.css';
+@import 'element-plus/theme-chalk/dark/css-vars.css';
+@import '@/styles/theme.scss';
+@import '@/styles/loading.css';
+// @import '@okiss/vbtf/style.css';
